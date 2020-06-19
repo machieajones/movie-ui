@@ -1,6 +1,3 @@
-# youtube-ui
-
-## Preview
 
 ## Installation
 
