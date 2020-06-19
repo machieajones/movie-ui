@@ -7,24 +7,8 @@ moviesDiv.addEventListener('scroll', () => {
 			movie.getBoundingClientRect().left <= window.innerWidth * 0.75 &&
 			movie.getBoundingClientRect().left > 0
 		) {
-			movie.classList.add('visible')
-			handleContentChange(movie.dataset.movie)
-		} else {
-			movie.classList.remove('visible')
+			document.body.dataset.movieselected = movie.dataset.movie
+			console.log('test')
 		}
 	}
 })
-
-const contentDivs = document.querySelectorAll('.content')
-
-const handleContentChange = id => {
-	if (!id) return
-
-	for (const contentDiv of contentDivs) {
-		contentDiv.classList.remove('visible')
-	}
-
-	document.getElementById(id).classList.add('visible')
-
-	document.body.dataset.movieselected = id
-}

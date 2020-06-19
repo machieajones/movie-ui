@@ -33,14 +33,27 @@ body {
 	font-family: 'Rubik';
 	margin: 0;
 	background: black;
+
 	&[data-movieselected='spiderman'] {
 		@include gradientAnimation(#24060f, #000, 0.2s);
+		#spiderman {
+			opacity: 1;
+			pointer-events: visible;
+		}
 	}
 	&[data-movieselected='batman'] {
 		@include gradientAnimation(#8a2918, #000, 0.2s);
+		#batman {
+			opacity: 1;
+			pointer-events: visible;
+		}
 	}
 	&[data-movieselected='hulk'] {
 		@include gradientAnimation(#1a461b, #000, 0.2s);
+		#hulk {
+			opacity: 1;
+			pointer-events: visible;
+		}
 	}
 }
 
