@@ -8,7 +8,6 @@ moviesDiv.addEventListener('scroll', () => {
 			movie.getBoundingClientRect().left > 0
 		) {
 			document.body.dataset.movieselected = movie.dataset.movie
-			console.log('test')
 		}
 	}
 })
